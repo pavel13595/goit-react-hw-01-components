@@ -1,4 +1,16 @@
 import PropTypes from 'prop-types';
+import {
+  Box,
+  ImgProfile,
+  Description,
+  Username,
+  Tag,
+  Location,
+  Stats,
+  ItemStatus,
+  SpanLabel,
+  QuantitySpan,
+} from './Profile.styled';
 export const Profile = ({
   username,
   tag,
@@ -7,29 +19,29 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatar} alt={username} className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <Box>
+      <Description>
+        <ImgProfile src={avatar} alt={username} />
+        <Username>{username}</Username>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
+      </Description>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
-        </li>
-      </ul>
-    </div>
+      <Stats>
+        <ItemStatus>
+          <SpanLabel className="label">Followers</SpanLabel>
+          <QuantitySpan className="quantity">{followers}</QuantitySpan>
+        </ItemStatus>
+        <ItemStatus>
+          <SpanLabel className="label">Views</SpanLabel>
+          <QuantitySpan className="quantity">{views}</QuantitySpan>
+        </ItemStatus>
+        <ItemStatus>
+          <SpanLabel className="label">Likes</SpanLabel>
+          <QuantitySpan className="quantity">{likes}</QuantitySpan>
+        </ItemStatus>
+      </Stats>
+    </Box>
   );
 };
 
