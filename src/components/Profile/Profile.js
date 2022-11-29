@@ -11,6 +11,7 @@ import {
   SpanLabel,
   QuantitySpan,
 } from './Profile.styled';
+
 export const Profile = ({
   username,
   tag,

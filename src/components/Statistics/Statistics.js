@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { randomHexColor } from 'js/randomHexColor';
 import {
   Box,
   Title,
@@ -7,10 +8,6 @@ import {
   Label,
   Percentage,
 } from './Statistics.styled';
-
-function randomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
 
 export const Statistics = ({ title, stats }) => {
   return (

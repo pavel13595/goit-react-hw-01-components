@@ -8,6 +8,7 @@ export const TransactionHistoryTb = styled.table`
   border-radius: 5px;
 `;
 export const Thead = styled.thead`
+  text-transform: uppercase;
   background-color: #2986cc;
   color: #fff;
 `;

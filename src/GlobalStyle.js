@@ -3,9 +3,6 @@ import 'modern-normalize';
 
 export const GlobalStyle = createGlobalStyle`
 body {
-  
- 
-
     margin: 0;
     padding: 50px;
     background-color: #e1e1e1;
@@ -20,8 +17,7 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-  
-  
+
   h1,
   h2,
   h3,
@@ -43,5 +39,4 @@ body {
     height: auto;
   }
   
-  }
 `;
