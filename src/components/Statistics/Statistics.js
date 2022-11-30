@@ -11,7 +11,7 @@ import {
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <Box className="statistics">
+    <Box>
       {title && <Title>{title}</Title>}
 
       <StatList>

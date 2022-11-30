@@ -30,16 +30,16 @@ export const Profile = ({
 
       <Stats>
         <ItemStatus>
-          <SpanLabel className="label">Followers</SpanLabel>
-          <QuantitySpan className="quantity">{followers}</QuantitySpan>
+          <SpanLabel>Followers</SpanLabel>
+          <QuantitySpan>{followers}</QuantitySpan>
         </ItemStatus>
         <ItemStatus>
-          <SpanLabel className="label">Views</SpanLabel>
-          <QuantitySpan className="quantity">{views}</QuantitySpan>
+          <SpanLabel>Views</SpanLabel>
+          <QuantitySpan>{views}</QuantitySpan>
         </ItemStatus>
         <ItemStatus>
-          <SpanLabel className="label">Likes</SpanLabel>
-          <QuantitySpan className="quantity">{likes}</QuantitySpan>
+          <SpanLabel>Likes</SpanLabel>
+          <QuantitySpan>{likes}</QuantitySpan>
         </ItemStatus>
       </Stats>
     </Box>
